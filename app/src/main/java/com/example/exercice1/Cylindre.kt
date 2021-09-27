@@ -11,9 +11,9 @@ class Cylindre(_radius:Double,_color:String,_height:Double = 1.0):Circle(_radius
 
     }
 
-    fun getVolume():Double = Math.PI * Math.pow(Circle.radius,2.0) * this.height;
+    fun getVolume():Double = Math.PI * Math.pow(super.radius,2.0) * this.height;
 
     override fun toString(): String {
-        TODO("Not yet implemented")
+        return super.monCercle();
     }
 }
