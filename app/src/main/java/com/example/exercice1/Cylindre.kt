@@ -14,6 +14,6 @@ class Cylindre(_radius:Double,_color:String,_height:Double = 1.0):Circle(_radius
     fun getVolume():Double = Math.PI * Math.pow(super.radius,2.0) * this.height;
 
     override fun toString(): String {
-        return super.monCercle();
+        return super.monCercle() + "Cylindre avec un volume de ${getVolume()} cm";
     }
 }

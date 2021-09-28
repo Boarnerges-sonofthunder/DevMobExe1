@@ -12,6 +12,6 @@ open class Circle(_radius:Double = 1.0, _color:String = "red") {
 
     fun getArea():Double = Math.PI * Math.pow(this.radius,2.0);
 
-    open fun monCercle() = "";
+    open fun monCercle() = "Il s'agit d'un ";
 
 }
