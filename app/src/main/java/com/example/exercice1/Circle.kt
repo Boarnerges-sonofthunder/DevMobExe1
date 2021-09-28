@@ -1,7 +1,8 @@
 package com.example.exercice1
 
 open class Circle(_radius:Double = 1.0, _color:String = "red") {
-    constructor(radius:Double,color:Double):this(radius,"red")
+    constructor(radius:Double):this(radius,"red");
+    constructor(radius:Double,color:Double):this(radius,"red");
 
     protected var radius:Double
     get() = field
@@ -11,6 +12,6 @@ open class Circle(_radius:Double = 1.0, _color:String = "red") {
 
     fun getArea():Double = Math.PI * Math.pow(this.radius,2.0);
 
-    open fun monCercle() = "hello world";
+    open fun monCercle() = "";
 
 }

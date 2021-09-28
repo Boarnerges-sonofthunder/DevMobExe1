@@ -8,6 +8,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var cir = Circle();
+        var c = cir.getArea()
+
+        var cyl = Cylindre(1.0,"blue",4.0);
+        var cyli = cyl.getVolume();
 
     }
 }
