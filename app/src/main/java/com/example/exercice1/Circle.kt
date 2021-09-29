@@ -1,8 +1,8 @@
 package com.example.exercice1
 
 open class Circle(_radius:Double = 1.0, _color:String = "red") {
+    constructor():this(0.0,"")
     constructor(radius:Double):this(radius,"red");
-    constructor(radius:Double,color:Double):this(radius,"red");
 
     protected var radius:Double
     get() = field
