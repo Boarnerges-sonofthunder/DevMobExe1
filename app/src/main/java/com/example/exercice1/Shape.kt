@@ -16,9 +16,9 @@ abstract class Shape(_color:String,_filled:Boolean){
 
     fun isFilled():Boolean = this.filled
 
-    abstract open fun getArea():Double;
-    abstract open fun getPerimeter():Double;
-    abstract open fun ToString():String;
+    abstract fun getArea():Double;
+    abstract fun getPerimeter():Double;
+    abstract fun ToString():String;
 
 
 }

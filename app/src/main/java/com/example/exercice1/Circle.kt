@@ -1,8 +1,9 @@
 package com.example.exercice1
 
-open class Circle(_radius:Double = 1.0, _color:String = "red") {
-    constructor():this(0.0,"")
-    constructor(radius:Double):this(radius,"red");
+open class Circle(_radius:Double = 1.0,_color:String,_filled:Boolean):Shape(_color,_filled) {
+    constructor():this(0.0,"",false);
+    constructor(radius:Double):this(radius,"red",false);
+
 
     protected var radius:Double
     get() = field
@@ -10,8 +11,18 @@ open class Circle(_radius:Double = 1.0, _color:String = "red") {
         this.radius = _radius
     }
 
-    fun getArea():Double = Math.PI * Math.pow(this.radius,2.0);
+    override fun getArea(): Double {
+        return Math.PI * Math.pow(this.radius,2.0);
+    }
 
-    open fun monCercle() = "Il s'agit d'un ";
+    //fun getArea():Double = Math.PI * Math.pow(this.radius,2.0);
+
+    override fun getPerimeter(): Double {
+        TODO("Not yet implemented")
+    }
+
+    override fun ToString(): String {
+        TODO("Not yet implemented")
+    }
 
 }
